@@ -645,6 +645,14 @@
                     </div>
                 </a>
 
+                <a href="{{ route('user-menus.index') }}" class="win-item" data-cat="settings" data-keywords="menu user navigasi akses hak master">
+                    <div class="win-item-icon" style="background:rgba(108,99,255,0.18);border-color:rgba(108,99,255,0.3);">🗂️</div>
+                    <div class="win-item-info">
+                        <div class="win-item-title">Master Menu User</div>
+                        <div class="win-item-desc">Kelola menu navigasi & hak akses</div>
+                    </div>
+                </a>
+
                 <!-- No results -->
                 <div class="win-no-results" id="winNoResults">
                     <div class="nr-icon">🔍</div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MenuItemController;
 use App\Http\Controllers\UserGroupController;
+use App\Http\Controllers\UserMenuController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,4 +42,9 @@ Route::middleware('auth')->group(function () {
 
     // User Groups — CRUD
     Route::resource('groups', UserGroupController::class);
+
+    // User Menus — CRUD
+    Route::resource('user-menus', UserMenuController::class);
+    Route::patch('user-menus/{userMenu}/toggle', [UserMenuController::class, 'toggle'])->name('user-menus.toggle');
 });
+
